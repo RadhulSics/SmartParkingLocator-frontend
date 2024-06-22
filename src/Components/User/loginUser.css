@@ -1,0 +1,85 @@
+.loginUser-img {
+    width: 100%;
+    margin: 0%;
+    margin-left: 0%;
+  }
+  
+  .loginUser-head{
+    position: relative;
+    top: 8px;
+    font-weight: 100;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10rem;
+    color:  #1A728E ;
+  }
+  .loginUser-label{
+    position: relative;
+    left: 40rem;
+    top: -2rem;
+    margin-top: 8px;
+    color: #1A728E;
+  }
+  .loginUser-input{
+    margin-left: 34rem;
+    margin-top: 60px;
+    width: 20rem;
+    height: 2.5rem;
+  }
+   .loginUser-input::placeholder{
+    text-indent: 2rem;
+    font-weight: lighter;
+   }
+
+   .loginUser-input1{
+    margin-left: 35.7rem;
+    margin-top: 60px;
+    width: 20rem;
+    height: 2.5rem;
+  }
+   .loginUser-input1::placeholder{
+    text-indent: 2rem;
+    font-weight: lighter;
+   }
+   .loginUser-Areset{
+    position: relative;
+    left: 39rem;
+    top: 6px;
+   }
+   .loginUser-Asignup{
+    position: relative;
+    left: 54rem;
+    top: -1rem;
+   }
+   .loginUser-a{
+    text-decoration: none;
+    color:#1A728E ;
+   }
+   .loginUser-btn{
+    background-color: #1A728E;
+    width: 9rem;
+    height: 30px;
+    position: relative;
+    left: 44rem;
+    color: white;
+    font-weight: 100;
+    padding: 2px 4px 4px 2px;
+    border: transparent;
+    border: #1A728E;
+   }
+
+   .loginUser-btn:hover{
+    background-color: #0a4a5e;
+   }
+
+   .loginUser-btn:active{
+    background-color: #84bdcf;
+   }
+  
+   .signupLogo1{
+    width: 1rem;
+    margin-left: .5rem;
+   }
+   .input-validation{
+    margin-left:39.5rem ;
+   }

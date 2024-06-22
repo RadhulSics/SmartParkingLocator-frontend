@@ -1,0 +1,31 @@
+.viewsinglereq {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.viewsinglereq{
+    text-align: center;
+}
+
+.details {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.label {
+    width: 150px; 
+    font-weight: bold;
+    text-align: left;
+    margin-left: 150px;
+    
+}
+
+.value {
+    flex-grow: 1;
+    
+}

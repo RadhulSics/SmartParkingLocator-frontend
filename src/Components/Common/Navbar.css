@@ -1,0 +1,41 @@
+.nav-position{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2%;
+    position: relative;
+    top: -2rem;
+    right: 15rem;
+}
+.nav-main{
+background-color:  #4DA9EC;
+width: 100%;
+height: 6rem ;
+
+}
+.navbar-li{
+    list-style-type: none;
+    
+}
+.nav-ahref{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+.nav-ahref:hover{
+    text-decoration: underline;
+  text-underline-offset: 0.5em;
+}
+.navbar-logo{
+    position: relative;
+    top: 1rem;
+    left: 15rem;
+    height: auto;
+    width: 10rem;
+}
+.navdrop-btn{
+    background-color: transparent !important;
+    border: transparent !important;
+}
+.dropdown_pic{
+    height: 40px;
+}

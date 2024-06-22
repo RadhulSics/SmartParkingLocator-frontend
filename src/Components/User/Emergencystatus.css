@@ -1,0 +1,66 @@
+.uvcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .emergencyststus-main {
+    width: 400px;
+    min-height: 400px;
+    background-color: #217dcda0; /* Light Blue */
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .emergencystatus-head {
+    text-align: center;
+    padding: 20px;
+    color: #303030; /* Dark Grey */
+  }
+  
+  .emergencystatus-issue p {
+    width: 300px;
+    word-wrap: break-word;
+    color: #000; /* Black */
+  }
+  
+  .shopnamdandcontact {
+    padding: 20px;
+    width: 390px;
+    word-wrap: break-word;
+
+  }
+  
+  .no-shops-message {
+    text-align: center;
+    color: #555; 
+  }
+  
+  .shop-details {
+    margin-top: 10px;
+  }
+  
+  .shop-details div {
+    margin-bottom: 10px;
+  }
+  
+  .shop-name, .mechanic-name {
+    font-weight: bold;
+    color: #007bff; 
+  }
+  
+  .contact-info {
+    color: #444; 
+  }
+  
+  .final-info {
+    margin-top: 10px;
+  }
+  
+  .final-info h5 {
+    margin-bottom: 5px;
+    color: #090; 
+  }
+  

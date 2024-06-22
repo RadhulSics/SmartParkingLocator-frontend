@@ -1,0 +1,55 @@
+
+.WorkshopList-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color:hsla(0, 0%, 100%, 0.738);
+  font-size: large;
+  border-top: 1px solid gray;
+  
+}
+
+.WorkshopList-heading{
+ text-align: center;
+ margin: 2rem;
+ color: white;
+}
+
+.workshoplist-box{
+  margin: 1rem;
+ }
+
+ .workshop-delete-btn{
+  background-color: #1A728E;
+  width: 9rem;
+  height: 30px;
+  color: white;
+  font-weight: 100;
+  padding: 2px 4px 4px 2px;
+  border-radius: 4px;
+  border: #1A728E;
+ 
+ }
+
+ .workshop-delete-btn:hover{
+  background-color: #0a4a5e;
+ }
+
+ .workshop-delete-btn:active{
+  background-color: #84bdcf;
+ }
+
+
+.workshopList-main-box{
+  margin-top: 3rem;
+  margin-left: 3rem;
+   border: 1px solid rgb(180, 179, 179);
+   border-radius: .5rem;
+   background-color: #4daaece5;
+   box-shadow: 2px 2px 10px rgb(143, 144, 144);
+   padding: 1rem;
+   width: 60rem;
+   min-height: 43.4rem
+}
+

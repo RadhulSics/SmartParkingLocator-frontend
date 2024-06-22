@@ -1,0 +1,35 @@
+.booked-service-container {
+    max-width: 400px; 
+    max-height: 400px; 
+    background-color: hsla(0, 0%, 99%, 0.211);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px;
+    /* display: flex; */
+  }
+  
+  .service-image {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .booking-info {
+    flex: 1;
+  }
+  .view-userbooked-service{
+    margin-top: 1.7rem;
+    margin-left: 4rem;
+     border: 1px solid rgb(180, 179, 179);
+     border-radius: .5rem;
+     background-color: #4daaece5;
+     box-shadow: 2px 2px 10px rgb(143, 144, 144);
+     padding: 1rem;
+     width: 60rem;
+     min-height: 45rem
+  }
+  .view-bookedservice-btn{
+    margin-left: 4.1rem;
+    color: white;
+  }

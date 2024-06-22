@@ -1,0 +1,87 @@
+.loginAdmin-img {
+    width: 100%;
+    margin: 0%;
+    margin-left: 0%;
+  }
+  
+  .loginAdmin-head{
+    position: relative;
+    top: 8px;
+    font-weight: 100;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10rem;
+    color:  #1A728E ;
+  }
+  .loginAdmin-label{
+    position: relative;
+    left: 40rem;
+    top: -2rem;
+    margin-top: 8px;
+    color: #1A728E;
+  }
+  .loginAdmin-input{
+    margin-top: 60px;
+    margin-left: 35rem;
+    width: 20rem;
+    height: 2.5rem;
+  }
+   .loginAdmin-input::placeholder{
+    text-indent: 2rem;
+    font-weight: lighter;
+   }
+   .loginAdmin-input1{
+    position: relative;
+    left: 31.7rem;
+    margin-top: 60px;
+    margin-left: 5rem;
+    width: 20rem;
+    height: 2.5rem;
+  }
+   .loginAdmin-input1::placeholder{
+    text-indent: 2rem;
+    font-weight: lighter;
+   }
+   .loginAdmin-Areset{
+    position: relative;
+    left: 39rem;
+    top: 6px;
+   }
+   .loginAdmin-Asignup{
+    position: relative;
+    left: 56rem;
+    top: -1rem;
+   }
+   .loginAdmin-a{
+    text-decoration: none;
+    color:#1A728E ;
+   }
+   .loginAdmin-btn{
+    background-color: #1A728E;
+    width: 9rem;
+    height: 30px;
+    position: relative;
+    left: 45rem;
+    color: white;
+    font-weight: 100;
+    padding: 2px 4px 4px 2px;
+    border: transparent;
+    border: #1A728E;
+   }
+
+   .loginAdmin-btn:hover{
+    background-color: #0a4a5e;
+   }
+
+   .loginAdmin-btn:active{
+    background-color: #84bdcf;
+   }
+  
+
+   .signupLogo2{
+    width: 1rem;
+    margin-left: .5rem;
+   }
+   .input-validation{
+    margin-left:39.5rem ;
+   }

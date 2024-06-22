@@ -1,0 +1,47 @@
+.emergency-user-main-box {
+    width: 100%; 
+    max-width: 700px; 
+    height: 600px;
+    background-color: aliceblue;
+    margin: 0 auto; 
+  }
+.emergency-user-main-box h2{
+    text-align: center;
+    font-weight: 800;
+}
+  @media (max-width: 768px) {
+    .emergency-user-main-box {
+      height: auto; 
+    }
+  }
+  .emergency-para{
+    text-align: center;
+    font-size: larger;
+    padding-top: 40px;
+  }
+  .District-emergecy{
+    text-align: center;
+    font-size:larger;
+  }
+  .District-emergecy input{
+    width: 400px;
+    height: 40px;
+    border-radius: 13px;
+    border: 2px solid black
+  }
+  .District-emergecy ::placeholder{
+    color: black;
+    padding: 10px;
+  }
+  .District-emergecy textarea{
+    width: 400px;
+    margin-top: 30px;
+    height: 100px;
+    border-radius: 13px;
+    border: 2px solid black
+
+  }
+  .emergencybtn button{
+    margin-top: 50px;
+    margin-left: 250px;
+  }

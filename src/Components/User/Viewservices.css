@@ -1,0 +1,84 @@
+/* .viewservices-box {
+    background-color: rgb(67, 168, 230);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .viewservices-box p {
+    margin: 5px 0;
+  }
+  #clor{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+  } */
+  .cards {
+    background-color: #3982db;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .cards:hover {
+    /* transform: translateY(-4px); */
+    transform: scale(1.1,1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  .cards:hover>.cards:not(:hover){
+    filter: blur(10px);
+    transform: scale(0.9,0.9);
+  }
+  
+  .service-name {
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+    
+  }
+  
+  .price {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .shop-name {
+    font-size: 15px;
+    color: #181717;
+  }
+  
+  /* .container {
+    max-width: 1200px; 
+    margin: 0 auto;
+  } */
+  
+  /* .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px; 
+  } */
+  
+  .col-lg-3,
+  .col-md-4,
+  .col-sm-6 {
+    padding: 15px; /* adjust gutter space */
+  }
+  

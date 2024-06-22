@@ -1,0 +1,38 @@
+.updated-service-req-customer{
+    border: 1px solid rgb(180, 179, 179);
+    box-shadow: 2px 2px 10px rgb(143, 144, 144);
+    border-radius: .5rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    width: 40rem;
+    margin-left: 3rem;
+  }
+  
+  .updated-service-req-title{
+    text-align: center;
+    color:  #1A728E;
+    margin: 2rem;
+  }
+  
+  .updated-service-req-title {
+    text-align: center;
+  }
+  
+  
+  
+   .updated-service-req-description{
+    margin-left: 2rem;
+   }
+   .updated-service-req-textbox{
+    width: 40rem;
+    height: 5rem;
+    text-indent: 3rem;
+    font-size: larger;
+    margin-bottom: 2rem;
+   }
+   .updated-service-req-file{
+    margin-left: 8rem;
+   }
+  
+   
+  

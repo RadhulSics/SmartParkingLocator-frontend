@@ -1,0 +1,116 @@
+.textarea-spareparts{
+  position: relative;
+  left: 10rem;
+  margin-top: 50px;
+  margin-left: 6rem;
+  width: 320px;
+  height: 150px;
+}
+
+.spareparts-img{
+  width: 100%;
+  margin: 0%;
+  margin-left: 0%;
+}
+.spareparts-head{
+  position: relative;
+  top: 13px;
+  font-weight: 100;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 5rem;
+  color:  #1A728E ;
+}
+.spareparts-label{
+  position: relative;
+  left: 16rem;
+  top: 3rem;
+  margin-top: 2px;
+  color: #1A728E;
+}
+.spareparts-input{
+  position: relative;
+  left: 10rem;
+  margin-top: 50px;
+  margin-left: 6rem;
+  width: 20rem;
+  height: 2.5rem;
+}
+ .spareparts-input::placeholder{
+  text-indent: 2rem;
+  font-weight: lighter;
+ }
+ .spareparts-select1{
+  position: relative;
+  left: 52rem;
+  bottom: 2rem;
+  background-color: transparent;
+  border: transparent;
+ }
+ .spareparts-select{
+  position: relative;
+  left: 49rem;
+  bottom: 2rem;
+  background-color: transparent;
+  border: transparent;
+ }
+ .signsparepartsupWorkshop-a{
+  text-decoration: none;
+  position: relative;
+  left: 50rem;
+  top: -1.7rem;
+  font-size: 18px;
+  color: #1A728E;
+ }
+ .spareparts-btn{
+  background-color: #1A728E;
+  width: 9rem;
+  height: 30px;
+  position: relative;
+  left: 22rem;
+  top: 2rem;
+  color: white;
+  font-weight: 100;
+  padding: 2px 4px 4px 2px;
+  border: transparent;
+  border: #1A728E;
+ }
+ .spareparts-btn:hover{
+  background-color: #0a4a5e;
+ }
+
+ .spareparts-btn:active{
+  background-color: #84bdcf;
+ }
+ .spareparts-logo{
+  width: 13px;
+  height: 10px;
+  position: relative;
+  left: 40rem;
+  top: 2rem;
+ }
+ .spareparts-main{
+  position: relative;
+  bottom: 2rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+   border: 1px solid rgb(180, 179, 179);
+   border-radius: .5rem;
+   background-color: #4daaece5;
+   box-shadow: 2px 2px 10px rgb(143, 144, 144);
+   padding: 1rem;
+   width: 60rem;
+ }
+ .spareparts-p{
+  position: relative;
+  left:37rem ;
+  top: 1rem;
+  font-size: 18px;
+  color: #1A728E;
+ }
+ .spareparts-validation{
+  position: relative;
+  left: 36rem;
+ }
+
+

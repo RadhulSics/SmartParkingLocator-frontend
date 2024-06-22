@@ -1,0 +1,25 @@
+.aboutus-img{
+  width: 100%;
+  margin: 0%;
+  margin-left: 0%;
+}
+.aboutus-head{
+  color: #1A728E ;
+ margin-left: 22rem;
+ margin-top: 3rem;
+ margin-bottom: 2rem;
+  font-weight: 300;
+}
+.aboutus-para{
+  margin-left: 22rem;
+  color: #1A728E;
+  text-align: justify;
+  width: 50rem;
+}
+
+.abt-image-div{
+  width: 52rem;
+  margin-top: 3rem;
+  row-gap: 2rem;
+  margin-left: 21rem;
+}
