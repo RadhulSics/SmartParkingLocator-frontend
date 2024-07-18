@@ -1,0 +1,11 @@
+.editspareparts input{
+    width: 500px;
+    height: 45px;
+    border: none;
+}
+.editspareparts textarea{
+    width:500px;
+    height: 90px;
+    border: none;
+
+}

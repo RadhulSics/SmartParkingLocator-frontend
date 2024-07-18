@@ -1,0 +1,320 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.Main-box{
+  border-top: 1px solid white;
+  background-color: #4DA9EC;
+  padding: 5rem;
+}
+
+.main-heading{
+  color: white;
+  font-size:xx-large;
+  font-weight: 100;
+  position: relative;
+  left:10rem;
+}
+
+.main-search{
+  position: relative;
+  left:10rem;
+}
+
+.main-input{
+  margin: .4rem;
+  width: 18rem;
+  height: 3rem;
+  border: transparent;
+  border-radius: 2px;
+}
+
+.main-input::placeholder {
+  text-indent: 2rem;
+  color: #4DA9EC;
+  font-weight: lighter;
+}
+
+.main-search-btn{
+  margin: .5rem;
+  width: 13rem;
+  height: 3rem;
+  border: transparent;
+  border-radius: 2px;
+  background-color: #FCD006;
+  color: white;
+  font-weight: bold;
+}
+
+.main-search-btn:hover{
+  background-color:#1A728E;
+}
+
+.main-img{
+  width: 100%;
+  margin: 0%;
+  margin-left: 0%;
+}
+
+.main-category{
+  margin-top: 5rem;
+  color: #13517E;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.578);
+}
+
+.main-cat-title{
+  color: #1A728E;
+  text-align: center;
+  font-weight: lighter;
+  font-size: large;
+}
+
+.main-categorydiv{
+  display: flex;
+  gap: 2rem;
+  margin: 5rem;
+  margin-left: 5rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.main-categorydiv2{
+  display: flex;
+  gap: 2rem;
+  margin: 5rem;
+  margin-left: 5rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.category-service{
+ background-color: rgba(255, 255, 255, 0.374);
+ width: 15.5rem;
+ height: 6rem;
+ color: white;
+ position: relative;
+ top:-15rem;
+ text-align: center;
+ padding-top: 2rem;
+ font-size: larger;
+ font-weight: 400;
+}
+
+.popular-category-div{
+  position: relative;
+  top: -16rem;
+}
+
+.popular-category{
+  color: #13517E;
+  text-align: center;
+}
+
+.popular-title{
+  color: #1A728E;
+  text-align: center;
+  font-size: large;
+  font-weight: lighter;
+}
+
+.conv-div{
+margin-left: 7rem;
+margin-top: -10rem;
+}
+
+.conv-img{
+  width: 20rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.conv-details{
+  margin: 3rem;
+}
+
+.schedule-title{
+  color:#13517E;
+}
+
+.schedule-details{
+  color: #13517E;
+  font-weight: lighter;
+}
+
+.schedule-details1{
+  color:#13517E ;
+}
+
+.schedule-btn{
+  margin-top: 2rem;
+  background-color: #FCD006;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 2px;
+  border: transparent;
+  color: white;
+  font-weight: lighter;
+}
+
+.schedule-btn:hover{
+  background-color:#1A728E;
+}
+
+.trustworthy-title{
+  color: #13517E;
+  margin-top: 5rem;
+  margin-left: 27rem;
+}
+
+.trustworthy-title1{
+  margin-top: 0;
+  color:#13517E ;
+  text-align: center;
+  font-size: large;
+  font-weight: lighter;
+  margin-left: -10rem;
+}
+
+
+.icon-div{
+  margin-top: 4rem;
+  margin-left: -2rem;
+}
+
+.icon-headph{
+  width: 8rem;
+  position: relative;
+  left: 10rem;
+}
+
+.icon-ellipse1{
+  width: 1rem;
+  object-fit: contain;
+  position: relative;
+  left: 12rem;
+}
+
+.icon-arrow1{
+  width: 6rem;
+  position: relative;
+  left: 12rem;
+  object-fit: contain;
+}
+
+.icon-rectangle{
+  width: 15rem;
+  position: relative;
+  left: 15rem;
+  object-fit: contain;
+}
+
+.icon-polygon{
+  width: 10rem;
+  position: relative;
+  left: 5rem;
+  top:6rem;
+  object-fit: contain;
+}
+
+.icon-fourarrow{
+  width: 6rem;
+  position: relative;
+  left: -5.5rem;
+  object-fit: contain;
+}
+
+.icon-arrow2{
+  width: 6rem;
+  position: relative;
+  left:2rem;
+  object-fit: contain;
+}
+
+.icon-ellipse2{
+  width: 1rem;
+  object-fit: contain;
+  position: relative;
+  left: 2rem;
+}
+
+.icon-carrep{
+  width: 8rem;
+  position: relative;
+  left: 5rem;
+}
+
+.howdo-title{
+  color: #13517E;
+  text-align: center;
+  margin-left: -5rem;
+  margin-top: 5rem;
+}
+
+.howdo-details{
+  color: #1A728E;
+  text-align: center;
+  font-size: large;
+  font-weight: lighter;
+  margin-left: -5rem;
+}
+
+.image-div{
+  width: 70rem;
+  margin-top: 3rem;
+  row-gap: 2rem;
+}
+.user_prescription_link button{
+  margin-top: -30px;
+  float: right;
+  animation-name: shake;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  cursor: pointer;
+  position: relative;
+}
+
+.user_prescription_link button:hover {
+  animation-name: shakeAnim;
+}
+
+@keyframes shakeAnim {
+  0% {left: 0}
+  1% {left: -3px}
+  2% {left: 5px}
+  3% {left: -8px}
+  4% {left: 8px}
+  5% {left: -5px}
+  6% {left: 3px}
+  7% {left: 0}
+}
+
+@keyframes shake {
+  0% {left: 0}
+  1% {left: -3px}
+  2% {left: 5px}
+  3% {left: -8px}
+  4% {left: 8px}
+  5% {left: -5px}
+  6% {left: 3px}
+  7% {left: 0}
+}
+
+.viewservices_search{
+  width: 290px;
+  height: 50px;
+  background-color: aliceblue;
+  padding: 10px;
+  
+}
+#service-search{
+  margin-left: 6px;
+  border-bottom-left-radius: 20px;
+
+}

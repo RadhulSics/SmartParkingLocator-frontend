@@ -1,0 +1,62 @@
+.forgotUser-img {
+    width: 100%;
+    margin: 0%;
+    margin-left: 0%;
+  }
+  
+  .forgotUser-head{
+    position: relative;
+    top: 8px;
+    font-weight: 100;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 5rem;
+    color:  #1A728E ;
+  }
+  .forgotUser-label{
+    position: relative;
+    left: 39rem;
+     top: 2rem; 
+    margin-top: 3px;
+    color: #1A728E;
+  }
+  .forgotUser-input{
+    margin-left: 39rem;
+    margin-top: 40px;
+    width: 20rem;
+    height: 2.5rem;
+  }
+   .forgotUser-input::placeholder{
+    text-indent: 2rem;
+    font-weight: lighter;
+   }
+  
+   .forgotUser-btn{
+    background-color: #1A728E;
+    width: 9rem;
+    height: 30px;
+    position: relative;
+    left: 44rem;
+    top:1.5rem;
+    color: white;
+    font-weight: 100;
+    padding: 3px 4px 4px 3px;
+    border: transparent;
+    border: #1A728E;
+   }
+
+   .forgotUser-btn:hover{
+    background-color: #0a4a5e;
+   }
+
+   .forgotUser-btn:active{
+    background-color: #84bdcf;
+   }
+  
+   .signupLogo1{
+    width: 1rem;
+    margin-left: .5rem;
+   }
+   .input-validation{
+    margin-left:39.5rem ;
+   }

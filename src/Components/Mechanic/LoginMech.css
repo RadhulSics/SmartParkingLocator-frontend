@@ -1,0 +1,89 @@
+.loginMech-img {
+    width: 100%;
+    margin: 0%;
+    margin-left: 0%;
+  }
+  
+  .loginMech-head{
+    position: relative;
+    top: 8px;
+    font-weight: 100;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10rem;
+    color:  #1A728E ;
+  }
+  .loginMech-label{
+    position: relative;
+    left: 40rem;
+    top: -2rem;
+    margin-top: 8px;
+    color: #1A728E;
+  }
+  .loginMech-input{
+    position: relative;
+    left: 30rem;
+    margin-top: 60px;
+    margin-left: 5rem;
+    width: 20rem;
+    height: 2.5rem;
+  }
+   .loginMech-input::placeholder{
+    text-indent: 2rem;
+    font-weight: lighter;
+   }
+   .loginMech-input1{
+    position: relative;
+    left: 31.7rem;
+    margin-top: 60px;
+    margin-left: 5rem;
+    width: 20rem;
+    height: 2.5rem;
+  }
+   .loginMech-input1::placeholder{
+    text-indent: 2rem;
+    font-weight: lighter;
+   }
+   .loginMech-Areset{
+    position: relative;
+    left: 39rem;
+    top: 6px;
+   }
+   .loginMech-Asignup{
+    position: relative;
+    left: 56rem;
+    top: -1rem;
+   }
+   .loginMech-a{
+    text-decoration: none;
+    color:#1A728E ;
+   }
+   .loginMech-btn{
+    background-color: #1A728E;
+    width: 9rem;
+    height: 30px;
+    color: white;
+    font-weight: 100;
+    padding: 2px 4px 4px 2px;
+    border: transparent;
+    border-radius: 3px;
+    margin-left: 45rem;
+
+   }
+   .loginMech-btn:hover{
+    background-color: #0a4a5e;
+   }
+
+   .loginMech-btn:active{
+    background-color: #84bdcf;
+   }
+   
+   .signupLogo{
+    width: 1rem;
+    margin-left: .5rem;
+   }
+   .input-validation{
+    margin-left:39.5rem ;
+    width: 20rem;
+    font-size:1.3cap;
+   }

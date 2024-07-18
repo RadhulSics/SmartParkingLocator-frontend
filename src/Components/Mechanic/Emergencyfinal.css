@@ -1,0 +1,14 @@
+.card-finalprice input{
+    margin: 10px;
+    width: 300px;
+    height: 35px;
+    border-radius: 12px;
+}
+.card-finalprice textarea{
+    margin: 10px;
+    width: 300px;
+    height: 80px;
+    border-radius: 12px;
+    /* margin-left: 35px; */
+
+}

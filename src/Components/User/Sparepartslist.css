@@ -1,0 +1,44 @@
+.spareList-main{
+    position: relative;
+    right: -2rem;
+    top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    text-decoration: none;
+   }
+   .spareList-head{
+    text-align: center;
+    font-weight: 500;
+    color:#1A728E;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0.5rem;
+   }
+   
+   .spareList-col {
+     margin: .5rem; 
+     width: 17rem !important;
+     height: 19rem;
+   }
+   
+   .spareList-img{
+     width: 14rem;
+     height: 11rem;
+     object-fit: contain;
+     padding-top: .25rem;
+     margin: 0;
+   }
+   
+   .spareList-name{
+     font-size: small ;
+     color: rgba(51, 49, 49, 0.812) !important;
+     font-weight: bold;
+     width: 9rem;
+     height: 2.5rem;
+     overflow: hidden;
+   }
+   
+   .spareList-price{
+     text-align: center;
+     font-weight: 660;
+   }

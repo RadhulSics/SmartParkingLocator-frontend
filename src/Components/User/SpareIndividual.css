@@ -1,0 +1,73 @@
+.spareindcaro-change{
+    margin-top: 20px;
+    width: 50%;
+    /* position: relative;
+    margin-left: 70px;
+    margin-top: 50px; */
+  }
+  .spareindprod-img{
+    width: 30rem;
+    height: 30rem;
+    object-fit: contain;
+  }
+  .caro-flex{
+    display: flex;
+  }
+  .spareindbuy-btn{
+    margin-left: 330px;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:#1A728E;
+    color: #fff;
+    font-size: large;
+    border-style: solid;
+    border-color: transparent;
+    position: relative;
+    top: -70px;
+  }
+  .spareindbuy-btn:hover{
+    background-color: #44949F;
+  }
+  
+  
+  .spareind-price{
+    font-size: large;
+    font-weight: 600;
+    margin-left: 40px;
+  }
+  .spareindprod-details{
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  .spareind-dec{
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  
+  .spareind-spec{
+    font-weight: 600;
+    font-style: italic;
+  }
+  .ind-part{
+    margin-top: 20px;
+  }
+  .spareind-btn{
+    width: 3rem;
+    height: 2rem;
+    background-color: #1A728E;
+    font-weight: 900;
+    font-size: larger;
+    color:white;
+    border: transparent;
+    border-radius: 4px;
+
+  }
+  .spareind-count{
+    font-weight: 600;
+    margin-top: 2px;
+    margin-bottom: 3px;
+   
+  }
+ 

@@ -1,0 +1,36 @@
+.ind-service-req-title{
+  text-align: center;
+  color:  #1A728E;
+  margin: 2rem;
+}
+
+.ind-service-req-card{
+  border: 1px solid rgb(180, 179, 179);
+  border-radius: .5rem;
+  padding: 1.5rem;
+  background-color: #4daaece5;
+  box-shadow: 2px 2px 10px rgb(143, 144, 144);
+  max-width: 50rem;
+  margin: auto;
+  color: white;
+}
+
+.ind-service-req-date{
+  text-align: right;
+}
+
+.ind-service-req-customer{
+  border: 1px solid rgb(180, 179, 179);
+  box-shadow: 2px 2px 10px rgb(143, 144, 144);
+  border-radius: .5rem;
+  padding: 1.5rem;
+  margin-top: 1rem
+}
+
+.ind-service-req-customer-title{
+  text-align: center;
+}
+.ind-service-req-customer-img{
+  max-width: 10rem;
+  border-radius: .5rem;
+}

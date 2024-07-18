@@ -1,0 +1,17 @@
+.pageheadAdmin-img{
+    width: 100%;
+    margin: 0%;
+    margin-left: 0%;
+}
+.pageheadAdmin-head{
+    color: #1A728E ;
+   margin-left: 18rem;
+    font-weight: 300;
+}
+.pageheadAdmin-para{
+   
+    margin-left: 18rem;
+    color: #1A728E;
+    text-align: justify;
+    width: 50rem;
+}

@@ -1,0 +1,81 @@
+.ind-service-req-customer{
+  border: 1px solid rgb(180, 179, 179);
+  box-shadow: 2px 2px 10px rgb(143, 144, 144);
+  border-radius: .5rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  width: 40rem;
+  margin-left: 2rem;
+}
+
+.ind-service-req-title{
+  text-align: center;
+  color:  #1A728E;
+  margin: 2rem;
+}
+
+.ind-service-req-title {
+  text-align: center;
+}
+
+
+.ind-service-req-btn{
+  background-color: #1A728E;
+  width: 9rem;
+  height: 30px;
+  color: white;
+  font-weight: 100;
+  padding: 2px 4px 4px 2px;
+  border: transparent;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: .2rem;
+  margin-top: 3rem;
+  font-weight: bolder;
+  margin-left: 43.2rem;
+ }
+ .ind-service-req-btn:hover{
+  background-color: #0a4a5e;
+ }
+
+ .ind-service-req-btn:active{
+  background-color: #84bdcf;
+ }
+
+ .ind-service-req-description{
+  margin-left: 2rem;
+ }
+ .ind-service-req-textbox{
+  width: 35rem;
+  height: 5rem;
+  text-indent: 1rem;
+  font-size: larger;
+  margin-bottom: 2rem;
+ }
+ .ind-service-req-file{
+  margin-left: 8rem;
+ }
+
+ 
+.ind-service-update-btn{
+  background-color: #0e9c15bc;
+  width: 9rem;
+  height: 30px;
+  color: white;
+  font-weight: 100;
+  padding: 2px 4px 4px 2px;
+  border: transparent;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: .2rem;
+  margin-top: 1.5rem;
+  font-weight: bolder;
+  margin-left: 17rem;
+ }
+ .ind-service-update-btn:hover{
+  background-color: #0e9c158b;
+ }
+
+ .ind-service-update-btn:active{
+  background-color: #0e9c15;
+ }

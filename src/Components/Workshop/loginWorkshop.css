@@ -1,0 +1,94 @@
+.loginWorkshop-img {
+    width: 100%;
+    margin: 0%;
+    margin-left: 0%;
+  }
+  
+  .loginWorkshop-head{
+    position: relative;
+    top: 8px;
+    font-weight: 100;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10rem;
+    color:  #1A728E ;
+  }
+  .loginWorkshop-label{
+    position: relative;
+    left: 40rem;
+    top: -2rem;
+    margin-top: 8px;
+    color: #1A728E;
+  }
+  .loginWorkshop-input{
+    position: relative;
+    left: 30rem;
+    margin-top: 60px;
+    margin-left: 5rem;
+    width: 20rem;
+    height: 2.5rem;
+  }
+   .loginWorkshop-input::placeholder{
+    text-indent: 2rem;
+    font-weight: lighter;
+   }
+   .loginWorkshop-input1{
+    position: relative;
+    left: 31.7rem;
+    margin-top: 60px;
+    margin-left: 5rem;
+    width: 20rem;
+    height: 2.5rem;
+  }
+   .loginWorkshop-input1::placeholder{
+    text-indent: 2rem;
+    font-weight: lighter;
+   }
+   .loginWorkshop-Areset{
+    position: relative;
+    left: 39rem;
+    top: 6px;
+   }
+   .loginWorkshop-Asignup{
+    position: relative;
+    left: 56rem;
+    top: -1rem;
+   }
+   .loginWorkshop-a{
+    text-decoration: none;
+    color:#1A728E ;
+   }
+   .loginWorkshop-btn{
+    background-color: #1A728E;
+    width: 9rem;
+    height: 30px;
+    position: relative;
+    left: 45rem;
+    color: white;
+    font-weight: 100;
+    padding: 2px 4px 4px 2px;
+    border: transparent;
+    border: #1A728E;
+   }
+
+   .loginWorkshop-btn:hover{
+    background-color: #0a4a5e;
+   }
+
+   .loginWorkshop-btn:active{
+    background-color: #84bdcf;
+   }
+   .signupBtn-logo{
+    width: 13px;
+    height: 10px;
+    position: relative;
+    left: 42.5rem;
+   }
+
+   .signupLogo2{
+    width: 1rem;
+    margin-left: .5rem;
+   }
+   .input-validation{
+    margin-left:39.5rem ;
+   }

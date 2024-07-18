@@ -1,0 +1,72 @@
+
+    .viewmechanic-main-box{
+        margin-top: 3rem;
+        margin-left: 5rem;
+         border: 1px solid rgb(180, 179, 179);
+         border-radius: .5rem;
+         background-color: #4daaece5;
+         box-shadow: 2px 2px 10px rgb(143, 144, 144);
+         padding: 1rem;
+         width: 60rem;
+         min-height: 49.4rem
+      }
+
+    .viewmechanic-heading{
+        text-align: center;
+        margin: 2rem;
+        color: white;
+      }
+
+      .viewmechanic-name{
+        font-size: small ;
+        color: rgba(51, 49, 49, 0.812) !important;
+        font-weight: bold;
+        /* width: 9rem;
+        height: 2.5rem; */
+        overflow: hidden;
+      }
+      
+      .viewmechanic-img{
+        width: 15rem;
+        height: 10rem;
+        /* object-fit: contain;
+        padding-top: .25rem;
+        margin: 0; */
+      }
+      .viewmechanic-card {
+        margin: .5rem; 
+        width: 17rem !important;
+        /* height: 17rem; */
+        background-color: hsla(0, 0%, 100%, 0.553);
+      }
+      .viewmechanic-main{
+        position: relative;
+        right: -2rem;
+        top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        text-decoration: none;
+       }   
+      
+     .viewmechanic-deletebtn{
+    background-color: rgb(255, 19, 19);
+    width: 5rem;
+    height: 30px;
+    margin-left: 4.5rem;
+    margin-top:  0rem;
+    color: white;
+    font-weight: 100;
+    padding: 2px 4px 4px 2px;
+    border: transparent;
+    border: #1A728E;
+    border-radius: 4px;
+   }
+
+   .viewmechanic-deletebtn:hover{
+    background-color: #0a4a5e;
+   }
+
+   .viewmechanic-deletebtn:active{
+    background-color: #84bdcf;
+   }
+  

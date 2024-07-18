@@ -1,0 +1,23 @@
+
+.AdminDash-details{
+  margin-top: 3rem;
+  margin-left: 3rem;
+   border: 1px solid rgb(180, 179, 179);
+   border-radius: .5rem;
+   background-color: #4daaece5;
+   box-shadow: 2px 2px 10px rgb(143, 144, 144);
+   padding: 1rem;
+   width: 60rem;
+ }
+ 
+ 
+ .dashboard-box{
+   border-radius: .5rem;
+   padding: 1rem;
+   background-color: rgba(255, 255, 255, 0.426);
+   box-shadow: 2px 2px 10px rgb(108, 160, 160);
+   margin-left: 4rem;
+   text-align: center;
+   width: 15rem;
+ }
+ 

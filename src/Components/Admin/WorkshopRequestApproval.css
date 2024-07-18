@@ -1,0 +1,28 @@
+.singlecontributer-main{
+    margin-top: 3rem;
+    margin-left: 0rem;
+     border: 1px solid rgb(180, 179, 179);
+     border-radius: .5rem;
+     background-color: #4daaece5;
+     box-shadow: 2px 2px 10px rgb(143, 144, 144);
+     padding: 1rem;
+     width: 50rem;
+     text-align: center;
+     
+}
+.singlecontributer-button{
+    margin-left: 10px;
+    margin-top: 2rem
+}
+.singlecontributer-main input{
+    width: 300px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 10px;
+}
+.request-heading{
+    text-align: center;
+ margin: 2rem;
+ color: white;
+}

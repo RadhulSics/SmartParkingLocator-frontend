@@ -1,0 +1,51 @@
+
+.service-box {
+    background-color: rgb(64, 198, 235);
+    width: 300px;
+    max-height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+ #h2 {
+    color: rgb(0, 0, 0);
+  }
+  
+  .service-details {
+    color: rgb(18, 78, 168);
+    font-weight: 600;
+  }
+  .field label{
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .field span {
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4; 
+  max-height: calc(1.5em * 4); 
+  white-space: normal;
+  color: black;
+  }
+  .field {
+    margin-bottom: 10px;
+  }
+  
+  .field label {
+    display: block;
+  }
+  
+  .field span {
+    margin-left: 10px;
+  }
+  
+  .service-details button {
+    background-color: rgb(59, 95, 239);
+    color: black;
+    /* padding: 5px 10px; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
