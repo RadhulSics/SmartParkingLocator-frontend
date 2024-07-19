@@ -47,25 +47,25 @@ function ParkingAgentLogin() {
 
     if (formIsValid) {
       console.log("data", data);
-    //   axiosInstance.post(`/loginworkshops`, data)
-    //     .then((result) => {
-    //       console.log("data entered", result);
-    //       if (result.data.status == 200) {
-    //         localStorage.setItem("workshopid", result.data.data._id);
-    //         console.log("workshopid", result.data.data._id);
-    //         alert("login Sucessfully...");
-    //         // navigate("/workshop-dashboard-myservices")
-    //       } else if (result.data.status == 401) {
-    //         alert("password mismatch");
-    //       } else if (result.data.status == 400) {
-    //         alert("user not found");
-    //       } else {
-    //         alert(result.data.msg);
-    //       }
-    //     })
-    //     .catch((err) => {
-    //       console.log(err);
-    //     });
+      axiosInstance.post(`/loginParkingAgent`, data)
+        .then((result) => {
+          console.log("data entered", result);
+          if (result.data.status == 200) {
+            localStorage.setItem("parkingId", result.data.data._id);
+            console.log("parkingId", result.data.data._id);
+            alert("login Sucessfully...");
+            navigate("/parking_agent_home")
+          } else if (result.data.status == 401) {
+            alert("password mismatch");
+          } else if (result.data.status == 400) {
+            alert("user not found");
+          } else {
+            alert(result.data.msg);
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     }
   };
 

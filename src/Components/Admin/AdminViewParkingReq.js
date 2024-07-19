@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./Workshoprequest.css";
-import img from "../../Assets/cat3.png";
 import axiosInstance from "../../Baseurl";
 import { Link } from "react-router-dom";
-import AdminDashboard from "./AdminDashboard";
 
-function Workshoprequest({ url }) {
+function AdminViewParkingReq({ url }) {
   const [data, setData] = useState([]);
   useEffect(() => {
     axiosInstance
-      .post(`/viewWorkshopReqs`, data)
+      .post(`/viewPendingParkingAgents`)
       .then((res) => {
         console.log(res.data);
         setData(res.data.data);
@@ -23,15 +20,14 @@ function Workshoprequest({ url }) {
     <div className="col-8">
       <div className="container">
         <div className=" workshop-request-main-box" style={{ padding: "10px" }}>
-          <h3 className=" Workshop-request-heading">WORKSHOP Requests</h3>
+          <h3 className=" Workshop-request-heading">Parking Agent Requests</h3>
           <div></div>
           {data.length ? (
             data.map((a) => {
-              
               return (
                 <div>
                   <Link
-                    to={`/dashboard-workshop-approval/${a?._id}`}
+                    to={`/dashboard_parking_agent_single_req/${a?._id}`}
                     style={{ textDecoration: "none", color: "black" }}
                   >
                     <div
@@ -46,7 +42,9 @@ function Workshoprequest({ url }) {
                       />
 
                       <div className="col-12">
-                        <h4>Shop Name : {a.name}</h4>
+                        <h4>
+                          Agent Name : {a.firstname} {a.secondaname}
+                        </h4>
                         <hr style={{ width: "700px" }} />
                         <div className="row">
                           <div className="col-6 work-email">
@@ -56,7 +54,7 @@ function Workshoprequest({ url }) {
                           </div>
                           <div className="col-6 work-reg">
                             <p id="arrow" style={{ paddingTop: "0px" }}>
-                              Reg No :{a.regno}
+                              Address :{a.address}
                             </p>
                           </div>
                         </div>
@@ -74,4 +72,5 @@ function Workshoprequest({ url }) {
     </div>
   );
 }
-export default Workshoprequest;
+
+export default AdminViewParkingReq;

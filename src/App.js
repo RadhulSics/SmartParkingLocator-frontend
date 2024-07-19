@@ -59,9 +59,12 @@ import Emergencystatus from './Components/User/Emergencystatus';
 import Viewupdations from './Components/Mechanic/Viewupdations';
 import ParkingAgentReg from './Components/ParkingAgent/ParkingAgentReg';
 import ParkingAgentLogin from './Components/ParkingAgent/ParkingAgentLogin';
+import ParkingAgentHome from './Components/ParkingAgent/ParkingAgentHome';
+import ParkingAgentNavbar from './Components/ParkingAgent/ParkingAgentNavbar';
+import ParkingAgentProfile from './Components/ParkingAgent/ParkingAgentProfile';
 
-const url = "http://localhost:4006";
-// const url= "http://hybrid.srishticampus.in:4006/"
+const url = "http://localhost:4031";
+// const url= "http://hybrid.srishticampus.in:4031/"
 
 function App() {
   return (
@@ -148,6 +151,8 @@ function App() {
       <Route path='/admin-dashboard-emergency-request' element={[<Adminnav/>,<AdminDashboardMain  data="emergency"/>,<Footer/>]}/>
       <Route path='/dashboard-workshop-approval/:id' element={[<Adminnav/>,<AdminDashboardMain data="requestApproval" url={url}/>,<Footer/>]}/>
       <Route path='/dashboard-workshop-emergency-approval/:id' element={[<Adminnav/>,<AdminDashboardMain data="emergencyRequestApproval" url={url}/>,<Footer/>]}/>
+      <Route path='/dashboard_parking_agent_list' element={[<Adminnav/>,<AdminDashboardMain data="parking_req_list" url={url}/>,<Footer/>]}/>
+      <Route path='/dashboard_parking_agent_single_req/:id' element={[<Adminnav/>,<AdminDashboardMain data="parking_single_req" url={url}/>,<Footer/>]}/>
      
      
      
@@ -156,6 +161,8 @@ function App() {
 
       <Route path='/parking_agent_reg' element={[<Loginnav/>,<ParkingAgentReg/>,<Footer/>]}/>
       <Route path='/parking_agent_login' element={[<Loginnav/>,<ParkingAgentLogin/>,<Footer/>]}/>
+      <Route path='/parking_agent_home' element={[<ParkingAgentNavbar/>,<ParkingAgentHome/>,<Footer/>]}/>
+      <Route path='/parking_agent_profile' element={[<ParkingAgentNavbar/>,<ParkingAgentProfile url={url} />,<Footer/>]}/>
 
      
      

@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axiosInstance from "../../Baseurl";
 import { useNavigate, useParams } from "react-router-dom";
-import img from "../../Assets/cat2.png";
-import "./WorkshopRequestApproval.css";
 
-function WorkshopRequestApproval({ url }) {
+function AdminViewSingleReqParking({ url }) {
   const { id } = useParams();
-  const [state, setState] = useState([]);
+  const [state, setState] = useState([{ image: { filename: "" } }]);
   useEffect(() => {
     axiosInstance
-      .post(`/viewWorkshopById/${id}`)
+      .post(`/viewParkingAgentById/${id}`)
       .then((res) => {
         console.log(res);
         setState(res.data.data);
@@ -25,7 +23,7 @@ function WorkshopRequestApproval({ url }) {
   const acceptfn = (e) => {
     e.preventDefault();
     axiosInstance
-      .post(`approveWorkshopById/${id}`)
+      .post(`approveParkingAgent/${id}`)
       .then((res) => {
         console.log(res);
         if (res.data.status == 200) {
@@ -40,7 +38,7 @@ function WorkshopRequestApproval({ url }) {
   const deletefn = (e) => {
     e.preventDefault();
     axiosInstance
-      .post(`deleteWorkshopById/${id}`)
+      .post(`rejectParkingAgent/${id}`)
       .then((res) => {
         console.log(res);
         if (res.data.status == 200) {
@@ -63,28 +61,29 @@ function WorkshopRequestApproval({ url }) {
               src={`${url}/${state.image && state.image.filename}`}
               alt="image"
               width="530px"
-              height="200px"
+              height="300px"
+              style={{ objectFit: "cover" }}
             />
           </div>
           <div className="col-4">Name :</div>
           <div className="col-8">
-            <input type="text" value={state.name} />
+            <input type="text" value={state.firstname} />
           </div>
           <div className="col-4">Email :</div>
           <div className="col-8">
             <input type="text" value={state.email} />
           </div>
-          <div className="col-4">Aadhar :</div>
-          <div className="col-8">
-            <input type="text" value={state.aadhar} />
-          </div>{" "}
-          <div className="col-4">Reg No :</div>
-          <div className="col-8">
-            <input type="text" value={state.regno} />
-          </div>{" "}
           <div className="col-4">Contact :</div>
           <div className="col-8">
             <input type="text" value={state.contact} />
+          </div>{" "}
+          <div className="col-4">Gender :</div>
+          <div className="col-8">
+            <input type="text" value={state.gender} />
+          </div>{" "}
+          {/* <div className="col-4">Reg No :</div>
+          <div className="col-8">
+            <input type="text" value={state.regno} />
           </div>{" "}
           <div className="col-4">City :</div>
           <div className="col-8">
@@ -93,7 +92,7 @@ function WorkshopRequestApproval({ url }) {
           <div className="col-4">District :</div>
           <div className="col-8">
             <input type="text" value={state.district} />
-          </div>{" "}
+          </div>{" "} */}
           <div className="singlecontributer-button">
             <button
               type="submit"
@@ -116,4 +115,4 @@ function WorkshopRequestApproval({ url }) {
   );
 }
 
-export default WorkshopRequestApproval;
+export default AdminViewSingleReqParking;

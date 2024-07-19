@@ -26,7 +26,7 @@ function UserProfile({url}) {
   return (
     
     <div>
-      <div className="col-8" style={{ marginLeft: "50px" }}>
+      <div className="col-8" style={{ marginLeft: "50px" }}> 
  
             <div className="reader_profile_account_info" style={{width:"60rem" }}>
             <div className="reader_profile_account_info_details row">

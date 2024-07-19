@@ -16,8 +16,7 @@ function ParkingAgentReg() {
     image: null,
     password: "",
     confirmPassword: "",
-    latitude: "",
-    longitude: "",
+
   });
 
   const [errors, setErrors] = useState({
@@ -31,8 +30,7 @@ function ParkingAgentReg() {
     image: "",
     password: "",
     confirmPassword: "",
-    latitude: "",
-    longitude: "",
+
   });
 
   let formIsValid;
@@ -157,8 +155,7 @@ function ParkingAgentReg() {
       data.password,
       data.confirmPassword
     );
-    errors.latitude = validateField("latitude", data.latitude);
-    errors.longitude = validateField("longitude", data.longitude);
+
 
     setErrors(errors);
     console.log(formIsValid);
@@ -172,26 +169,26 @@ function ParkingAgentReg() {
 
       console.log(formData);
 
-    //   axiosInstance
-    //     .post("/registerParkingAgent", formData, {
-    //       headers: {
-    //         "Content-Type": "multipart/form-data",
-    //       },
-    //     })
-    //     .then((res) => {
-    //       console.log(res);
-    //       if (res.data.status === 200) {
-    //         alert("Successfully registered");
-    //         navigate("/parking-agent-login");
-    //       } else if (res.data.Error.code === 11000) {
-    //         alert("This agent has already registered");
-    //       } else {
-    //         alert("Failed to register");
-    //       }
-    //     })
-    //     .catch((error) => {
-    //       console.log(error);
-    //     });
+      axiosInstance
+        .post("/registerParkingAgent", formData, {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        })
+        .then((res) => {
+          console.log(res);
+          if (res.data.status === 200) {
+            alert("Successfully registered");
+            navigate("/parking_agent_login");
+          } else if (res.data.status === 409) {
+            alert(res.data.msg);
+          } else {
+            alert("Failed to register");
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     }
   };
 
@@ -378,39 +375,6 @@ function ParkingAgentReg() {
                 )}
               </div>
 
-              <div>
-                <label className="signupWorkshop-label">Latitude</label>
-                <input
-                  className="signupWorkshop-input"
-                  type="number"
-                  placeholder="Latitude"
-                  value={data.latitude}
-                  name="latitude"
-                  onChange={change}
-                />
-                {errors.latitude && (
-                  <div className="text-danger signupWorkshop-validation">
-                    {errors.latitude}
-                  </div>
-                )}
-              </div>
-
-              <div>
-                <label className="signupWorkshop-label">Longitude</label>
-                <input
-                  className="signupWorkshop-input"
-                  type="number"
-                  placeholder="Longitude"
-                  value={data.longitude}
-                  name="longitude"
-                  onChange={change}
-                />
-                {errors.longitude && (
-                  <div className="text-danger signupWorkshop-validation">
-                    {errors.longitude}
-                  </div>
-                )}
-              </div>
               <div>
                 <p className="signupWorkshop-p">Already have an account,</p>
               </div>
