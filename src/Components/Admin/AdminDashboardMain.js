@@ -10,6 +10,7 @@ import WorkshopRequestApproval from "./WorkshopRequestApproval";
 import AdminEmergencyView from "./AdminEmergencyView";
 import AdminViewParkingReq from "./AdminViewParkingReq";
 import AdminViewSingleReqParking from "./AdminViewSingleReqParking";
+import AdminViewParkingAgent from "./AdminViewParkingAgent";
 
 const url = "http://localhost:4031";
 // const url= "http://hybrid.srishticampus.in:4031/"
@@ -39,6 +40,8 @@ function Workshopmain({ data }) {
           <AdminViewParkingReq url={url} />
         ) : data == "parking_single_req" ? (
           <AdminViewSingleReqParking url={url} />
+        ) : data == "parking_agent" ? (
+          <AdminViewParkingAgent url={url} />
         ) : (
           "No data"
         )}

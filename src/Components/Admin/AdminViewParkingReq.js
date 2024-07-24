@@ -8,7 +8,10 @@ function AdminViewParkingReq({ url }) {
     axiosInstance
       .post(`/viewPendingParkingAgents`)
       .then((res) => {
-        console.log(res.data);
+        if(res.data.msg=='No data obtained'){
+            setData([]);
+
+        }else if(res.data.status==200)
         setData(res.data.data);
       })
       .catch((err) => {

@@ -79,6 +79,24 @@ function AdminDashboardSidebar() {
               </div>
             </div>
 
+
+            <div className="sidebar-dash-btnflex">
+              <div className="admin_profile_sidebar_padding ">
+                <Link to="/dashboard_view_parking_agent">
+                  <div className="admin-dashboard-profile-sidebar">
+                    <div className="d-flex mt-2">
+                      <i class=" admin_profile_sidebar_icons"></i>
+                      <p className="sidebar-dash-btn">Parking Agent</p>
+                    </div>
+
+                    <div className="mt-2">
+                      <i class=" admin_profile_sidebar_icons"></i>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+
             <div className="sidebar-dash-btnflex">
               <div className="admin_profile_sidebar_padding ">
                 <Link to="/admin-dashboard-request">

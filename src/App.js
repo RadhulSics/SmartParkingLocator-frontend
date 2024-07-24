@@ -153,6 +153,7 @@ function App() {
       <Route path='/dashboard-workshop-emergency-approval/:id' element={[<Adminnav/>,<AdminDashboardMain data="emergencyRequestApproval" url={url}/>,<Footer/>]}/>
       <Route path='/dashboard_parking_agent_list' element={[<Adminnav/>,<AdminDashboardMain data="parking_req_list" url={url}/>,<Footer/>]}/>
       <Route path='/dashboard_parking_agent_single_req/:id' element={[<Adminnav/>,<AdminDashboardMain data="parking_single_req" url={url}/>,<Footer/>]}/>
+      <Route path='/dashboard_view_parking_agent' element={[<Adminnav/>,<AdminDashboardMain data="parking_agent" url={url}/>,<Footer/>]}/>
      
      
      
