@@ -12,8 +12,8 @@ import AdminViewParkingReq from "./AdminViewParkingReq";
 import AdminViewSingleReqParking from "./AdminViewSingleReqParking";
 import AdminViewParkingAgent from "./AdminViewParkingAgent";
 
-const url = "http://localhost:4031";
-// const url= "http://hybrid.srishticampus.in:4031/"
+// const url = "http://localhost:4031";
+const url= "http://hybrid.srishticampus.in:4031/"
 
 function Workshopmain({ data }) {
   return (

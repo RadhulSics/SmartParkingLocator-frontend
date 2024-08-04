@@ -25,7 +25,17 @@ function ParkingAgentNavbar() {
         <div>
           <li className='navbar-li'><Link className='nav-ahref'to='/parking_agent_home'>Home</Link></li>
         </div>
-       
+        <div class="dropdown">
+          <li className="navbar-li dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Parking Area
+          </li>
+          <ul class="dropdown-menu">
+            <li><Link class="dropdown-item" to="/parking_agent_add_parking_area">Add</Link></li>
+            <li><Link class="dropdown-item" to="/parking_agent_view_parking_area">View Areas</Link></li>
+            <li><Link class="dropdown-item" to="/parking_agent_view_parking_area_request">View Requests</Link></li>
+            <li><Link class="dropdown-item" to="/parking_agent_view_parking_area_bookings">Bookings</Link></li>
+          </ul>
+        </div>
    
         <div>
           <li className='navbar-li'><Link className='nav-ahref'to='/parking_agent_profile'>Profile</Link></li>
@@ -33,28 +43,7 @@ function ParkingAgentNavbar() {
         <div>
           <li className='navbar-li'><Link className='nav-ahref'to='/' onClick={handleLogout}>Logout</Link></li>
         </div>
-       {/* <div>
-          <li className='navbar-li'><Link className='nav-ahref'to='/'>Jobs</Link></li>
-        </div>
-        <div>
-          <li className='navbar-li'><Link className='nav-ahref' to='/'>Contact us</Link></li>
-        </div>
-        <div>
-          <img className='dropdown_pic'src={drop_pic} alt='dropdown_pic'/>
-        </div>
-        <div>
-        <div class="dropdown">
-          <button className="btn btn-secondary dropdown-toggle navdrop-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">a</a></li>
-            <li><a class="dropdown-item" href="#">b</a></li>
-            <li><a class="dropdown-item" href="#">c</a></li>
-          </ul>
-        </div>
-
-        </div> */}
+       
 
 
       </ul>

@@ -62,9 +62,19 @@ import ParkingAgentLogin from './Components/ParkingAgent/ParkingAgentLogin';
 import ParkingAgentHome from './Components/ParkingAgent/ParkingAgentHome';
 import ParkingAgentNavbar from './Components/ParkingAgent/ParkingAgentNavbar';
 import ParkingAgentProfile from './Components/ParkingAgent/ParkingAgentProfile';
+import ParkingAgentEditProfile from './Components/ParkingAgent/ParkingAgentEditProfile';
+import ParkingAgentAddParkingArea from './Components/ParkingAgent/ParkingAgentAddParkingArea';
+import ParkingAgentViewAreas from './Components/ParkingAgent/ParkingAgentViewAreas';
+import ViewMap from './Components/ParkingAgent/ViewMap';
+import ParkingAgentEditParkingArea from './Components/ParkingAgent/ParkingAgentEditParkingArea';
+import UserViewParkingAreas from './Components/User/UserViewParkingAreas';
+import UserViewParkingAreaBookings from './Components/User/UserViewParkingAreaBookings';
+import ParkingAgentViewRequests from './Components/ParkingAgent/ParkingAgentViewRequests';
+import ParkingAgentCheckSlots from './Components/ParkingAgent/ParkingAgentCheckSlots';
+import ParkingAgentViewApprovedBookings from './Components/ParkingAgent/ParkingAgentViewApprovedBookings';
 
-const url = "http://localhost:4031";
-// const url= "http://hybrid.srishticampus.in:4031/"
+// const url = "http://localhost:4031";
+const url= "http://hybrid.srishticampus.in:4031/"
 
 function App() {
   return (
@@ -96,6 +106,9 @@ function App() {
       <Route path='/paymentservice/:id' element={[<Userhomenav/>,<Paymentservice url={url}/>,<Footer/>]}/>
       <Route path='/emergency' element={[<Userhomenav/>,<Emergency />,<Footer/>]}/>
       <Route path='/emergency-status' element={[<Userhomenav/>,<Emergencystatus />,<Footer/>]}/>
+      <Route path='/user_view_parking_area' element={[<Userhomenav/>,<UserViewParkingAreas />,<Footer/>]}/>
+      <Route path='/user_view_parking_area_map/:lat/:lon' element={[<Userhomenav/>,<ViewMap />,<Footer/>]}/>
+      <Route path='/user_view_parking_area_bookings' element={[<Userhomenav/>,<UserViewParkingAreaBookings />,<Footer/>]}/>
 
 
       {/* Mechanic */}
@@ -164,6 +177,14 @@ function App() {
       <Route path='/parking_agent_login' element={[<Loginnav/>,<ParkingAgentLogin/>,<Footer/>]}/>
       <Route path='/parking_agent_home' element={[<ParkingAgentNavbar/>,<ParkingAgentHome/>,<Footer/>]}/>
       <Route path='/parking_agent_profile' element={[<ParkingAgentNavbar/>,<ParkingAgentProfile url={url} />,<Footer/>]}/>
+      <Route path='/parking_agent_edit_profile' element={[<ParkingAgentNavbar/>,<ParkingAgentEditProfile url={url} />,<Footer/>]}/>
+      <Route path='/parking_agent_add_parking_area' element={[<ParkingAgentNavbar/>,<ParkingAgentAddParkingArea url={url} />,<Footer/>]}/>
+      <Route path='/parking_agent_view_parking_area' element={[<ParkingAgentNavbar/>,<ParkingAgentViewAreas url={url} />,<Footer/>]}/>
+      <Route path='/parking_agent_edit_parking_area/:id' element={[<ParkingAgentNavbar/>,<ParkingAgentEditParkingArea url={url} />,<Footer/>]}/>
+      <Route path='/parking_agent_view_parking_area_map/:lat/:lon' element={[<ParkingAgentNavbar/>,<ViewMap url={url} />,<Footer/>]}/>
+      <Route path='/parking_agent_view_parking_area_request' element={[<ParkingAgentNavbar/>,<ParkingAgentViewRequests url={url} />,<Footer/>]}/>
+      <Route path='/parking_agent_check_slots/:id/:sid' element={[<ParkingAgentNavbar/>,<ParkingAgentCheckSlots url={url} />,<Footer/>]}/>
+      <Route path='/parking_agent_view_parking_area_bookings' element={[<ParkingAgentNavbar/>,<ParkingAgentViewApprovedBookings url={url} />,<Footer/>]}/>
 
      
      

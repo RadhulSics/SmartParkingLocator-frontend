@@ -164,7 +164,7 @@ function ParkingAgentReg() {
       console.log("data", data);
       const formData = new FormData();
       for (const key in data) {
-        formData.append(key, data[key]);
+        formData.append(key, data[key]); 
       }
 
       console.log(formData);

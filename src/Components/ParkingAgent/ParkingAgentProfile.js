@@ -20,7 +20,7 @@ function ParkingAgentProfile({ url }) {
       });
   }, []);
 
-  return (
+  return ( 
     <div>
       <div className="col-12" style={{ marginLeft: "50px" }}>
         <div className="reader_profile_account_info">
@@ -71,7 +71,7 @@ function ParkingAgentProfile({ url }) {
      </div> */}
 
               <div className="reader_profile_account_info_editbtn ">
-                <Link to={`/user-profile-edit/${parkingId}`}>
+                <Link to={`/parking_agent_edit_profile`}>
                   <button className="btn btn-primary">Edit Profile</button>
                 </Link>
               </div>

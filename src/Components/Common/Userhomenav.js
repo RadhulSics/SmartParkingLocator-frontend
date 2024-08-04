@@ -37,9 +37,15 @@ function Userhomenav() {
         <div>
           <li className='navbar-li'><Link className='nav-ahref'to='/Sparepartslist'>Spareparts</Link></li>
         </div>
-        {/* <div>
-          <li className='navbar-li'><Link className='nav-ahref'to='/emergency'>Emergeny Service</Link></li>
-        </div> */}
+        <div class="dropdown">
+          <li className="navbar-li dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Parking Area
+          </li>
+          <ul class="dropdown-menu">
+            <li><Link class="dropdown-item" to="/user_view_parking_area">View</Link></li>
+            <li><Link class="dropdown-item" to="/user_view_parking_area_bookings">Bookings</Link></li>
+          </ul>
+        </div>
         <div>
           <li className='navbar-li'><Link className='nav-ahref'to='/user-profile'>Profile</Link></li>
         </div>
