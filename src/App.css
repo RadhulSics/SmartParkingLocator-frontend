@@ -42,3 +42,9 @@
   width: 50px;
   object-fit: cover;
 }
+
+
+#entityChart {
+  height: 300px; /* Adjust this value to your desired height */
+  width: 100%; /* Optional: Adjust width if needed */
+}

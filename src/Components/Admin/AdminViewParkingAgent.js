@@ -16,6 +16,21 @@ function AdminViewParkingAgent() {
      })
     },[])
 
+    const deletefn=((userid)=>{
+      axiosInstance.post(`deleteParkingAgentById/${userid}`)
+      .then((res)=>{
+        console.log(res);
+        if(res.data.status==200){
+          alert(res.data.msg)
+          window.location.reload()
+        }
+      })
+      .catch((err)=>{
+        console.log(err)
+      })
+    
+     })
+
     console.log(users);
     
   return (
@@ -39,7 +54,7 @@ function AdminViewParkingAgent() {
               {'Contact : ' + user.contact}
               </div>
               <div>
-              {/* <button className='workshop-delete-btn'>Delete</button> */}
+              <button className='workshop-delete-btn' onClick={()=>{deletefn(user._id)}} >Delete</button>
               </div>
             </div>
           ))
