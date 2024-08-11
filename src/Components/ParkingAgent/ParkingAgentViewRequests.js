@@ -16,7 +16,7 @@ function ParkingAgentViewRequests() {
 
   useEffect(()=>{
     axiosInstance
-          .post(`viewApprovedBookingByAgentId/${id}`)
+          .post(`viewPendingBookingReqsByAgentId/${id}`)
           .then((res) => {
             console.log(res);
             if (res.data.status === 200) {
@@ -63,7 +63,7 @@ function ParkingAgentViewRequests() {
           className="d-flex justify-content-center align-items-center"
           style={{ minHeight: "80vh" }}
         >
-          <h1>No Bookings Found</h1>
+          <h1>No Requests Found</h1>
         </div>
       )}
     </div>

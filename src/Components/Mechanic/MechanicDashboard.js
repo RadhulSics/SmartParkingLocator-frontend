@@ -32,7 +32,7 @@ console.log(Users);
               <div className="col-7  reader_profile_account_info_fulldetails ">
                 <p>Account Info</p>
     
-                <div className="reader_profile_account_info_fulldetails_box mb-3">
+                <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>
                   <p className="col-4">Name</p>
                   <p>{Users?.firstname} {Users?.lastname}</p>
                 </div>
@@ -40,16 +40,16 @@ console.log(Users);
                   <p className="col-6">Owner Name</p>
                   <p>rfjhrjfrjr</p>
                 </div> */}
-                <div className="reader_profile_account_info_fulldetails_box mb-3">
+                <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>
                   <p className="col-4">Email</p>
                   <p>{Users?.email}</p>
                 </div>
-                <div className="reader_profile_account_info_fulldetails_box mb-3">
+                <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>
                   <p className="col-4">Aadhar</p>
                   <p>{Users?.aadhar}</p>
                 </div>
 
-                <div className="reader_profile_account_info_fulldetails_box mb-3">
+                <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>
                   <p className="col-4">Contact</p>
                   <p>{Users?.contact}</p>
                 </div>

@@ -95,7 +95,7 @@ function ParkingAgentLogin() {
             )}
           </div>
           <div className='loginWorkshop-Areset'>
-            <Link className='loginUser-a'>Reset Password</Link>
+            <Link to={'/parking_agent_reset_pass'} className='loginUser-a'>Reset Password</Link>
           </div>
           <div className='loginWorkshop-Asignup'>
             <Link to="/parking_agent_reg"><a className='loginWorkshop-a' href=''>Signup</a></Link>

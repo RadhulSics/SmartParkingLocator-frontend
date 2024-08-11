@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import imglogo from "../../Assets/logo.png"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 function Wnav() {
+
+
+  const navigate=useNavigate();
+
+  useEffect(()=>{
+    if(localStorage.getItem("workshopid")==null){
+      navigate('/')
+    }
+  })
+
+  const handleLogout = () => {
+    localStorage.removeItem("workshopid");
+  };
+
+
   return (
     <div >
     <nav className='nav-main'>
@@ -35,17 +50,14 @@ function Wnav() {
         <div>
           <li className='navbar-li'><Link className='nav-ahref' to='/workshop-emergencyrequest'><button type='submit' className='btn btn-danger'>Emergency request</button></Link></li>
         </div>
+        <div>
+        <li className='navbar-li'><Link className='nav-ahref' to='/workshop-dashboard'>Profile</Link></li>
+        </div>
+        <div>
+        <li className='navbar-li'><Link className='nav-ahref' onClick={handleLogout} to='/'>Logout</Link></li>
+        </div>
 
-        <div>
-          {/* <img className='dropdown_pic'src={drop_pic} alt='dropdown_pic'/> */}
-        </div>
-        <div>
-        <div>
-          <li className='navbar-li'><Link className='nav-ahref' to='/workshop-dashboard'>Profile</Link></li>
-        </div>
-       
 
-        </div>
 
 
       </ul>

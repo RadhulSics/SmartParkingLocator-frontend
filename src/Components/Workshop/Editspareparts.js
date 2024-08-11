@@ -27,7 +27,7 @@ function Editspareparts({ url }) {
 
   const changefn=((b)=>{
     if(b.target.name === "img"){
-        setdata({...data,image:b.target.files[0]});
+        setdata({...data,img:b.target.files[0]});
     }else {
         setdata({...data,[b.target.name]:b.target.value})
     }

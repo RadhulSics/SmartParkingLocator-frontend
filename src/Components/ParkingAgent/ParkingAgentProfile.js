@@ -28,26 +28,26 @@ function ParkingAgentProfile({ url }) {
             <div className="col-7  reader_profile_account_info_fulldetails ">
               <p>Account Info</p>
 
-              <div className="reader_profile_account_info_fulldetails_box mb-3">
+              <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>
                 <p className="col-4">Name</p>
                 <p>
                   {data?.firstname} {data?.lastname}
                 </p>
               </div>
-              <div className="reader_profile_account_info_fulldetails_box mb-3">
+              <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>
                 <p className="col-4">Email</p>
                 <p>{data?.email}</p>
               </div>
 
-              <div className="reader_profile_account_info_fulldetails_box mb-3">
+              <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>
                 <p className="col-4">Gender</p>
                 <p>{data?.gender}</p>
               </div>
-              <div className="reader_profile_account_info_fulldetails_box mb-3">
+              <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>
                 <p className="col-4">Contact</p>
                 <p>{data?.contact}</p>
               </div>
-              <div className="reader_profile_account_info_fulldetails_box mb-3">
+              <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>
                 <p className="col-4">DOB</p>
                 <p>{data?.dob.slice(0,10)}</p>
               </div>

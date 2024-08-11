@@ -72,14 +72,15 @@ import UserViewParkingAreaBookings from './Components/User/UserViewParkingAreaBo
 import ParkingAgentViewRequests from './Components/ParkingAgent/ParkingAgentViewRequests';
 import ParkingAgentCheckSlots from './Components/ParkingAgent/ParkingAgentCheckSlots';
 import ParkingAgentViewApprovedBookings from './Components/ParkingAgent/ParkingAgentViewApprovedBookings';
+import ParkingAgentForgotPass from './Components/ParkingAgent/ParkingAgentForgotPass';
 
-// const url = "http://localhost:4031";
-const url= "http://hybrid.srishticampus.in:4031/"
+const url = "http://localhost:4031";
+// const url= "http://hybrid.srishticampus.in:4031/"
 
 function App() {
   return (
     <BrowserRouter
-       basename='/automodo'
+       basename='/vehicle_parking_locator'
      >
     <Routes>
 
@@ -175,6 +176,7 @@ function App() {
 
       <Route path='/parking_agent_reg' element={[<Loginnav/>,<ParkingAgentReg/>,<Footer/>]}/>
       <Route path='/parking_agent_login' element={[<Loginnav/>,<ParkingAgentLogin/>,<Footer/>]}/>
+      <Route path='/parking_agent_reset_pass' element={[<Loginnav/>,<ParkingAgentForgotPass/>,<Footer/>]}/>
       <Route path='/parking_agent_home' element={[<ParkingAgentNavbar/>,<ParkingAgentHome/>,<Footer/>]}/>
       <Route path='/parking_agent_profile' element={[<ParkingAgentNavbar/>,<ParkingAgentProfile url={url} />,<Footer/>]}/>
       <Route path='/parking_agent_edit_profile' element={[<ParkingAgentNavbar/>,<ParkingAgentEditProfile url={url} />,<Footer/>]}/>
