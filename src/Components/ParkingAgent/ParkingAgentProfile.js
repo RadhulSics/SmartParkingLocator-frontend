@@ -36,7 +36,7 @@ function ParkingAgentProfile({ url }) {
               </div>
               <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>
                 <p className="col-4">Email</p>
-                <p>{data?.email}</p>
+                <p style={{textTransform:'none'}} >{data?.email}</p>
               </div>
 
               <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>

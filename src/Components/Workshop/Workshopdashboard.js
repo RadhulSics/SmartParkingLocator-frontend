@@ -39,7 +39,7 @@ function Workshopdashboard({ url }) {
                 </div> */}
               <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>
                 <p className="col-4">Email</p>
-                <p>{Users.email}</p>
+                <p style={{textTransform:'none'}} >{Users.email}</p>
               </div>
               <div className="reader_profile_account_info_fulldetails_box mb-3" style={{width:'auto'}}>
                 <p className="col-4">Aadhar</p>

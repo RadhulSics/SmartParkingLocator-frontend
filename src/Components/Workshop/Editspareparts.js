@@ -45,6 +45,7 @@ const editfn=((b)=>{
         console.log(res);
         if(res.data.status==200){
             alert("Edited Succesfully")
+            navigate('/workshop-viewspareparts')
         }
         else{
             alert("error")
