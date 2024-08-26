@@ -84,8 +84,8 @@ function App() {
        basename='/vehicle_parking_locator'
      >
           <ScrollToTop/>
-
-    <Routes>
+<div>
+   <Routes>
 
       <Route path='/' element={[<Navbar/>,<MainAdmin/>,<Footer/>]}/>
       <Route path='/table-format' element={[<Navbar/>,<AdminTable/>,<Footer/>]}/>
@@ -194,6 +194,8 @@ function App() {
      
      
      </Routes>
+</div>
+   
      </BrowserRouter>
    
 
