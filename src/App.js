@@ -73,6 +73,7 @@ import ParkingAgentViewRequests from './Components/ParkingAgent/ParkingAgentView
 import ParkingAgentCheckSlots from './Components/ParkingAgent/ParkingAgentCheckSlots';
 import ParkingAgentViewApprovedBookings from './Components/ParkingAgent/ParkingAgentViewApprovedBookings';
 import ParkingAgentForgotPass from './Components/ParkingAgent/ParkingAgentForgotPass';
+import ScrollToTop from './Components/Common/ScrollToTop';
 
 const url = "http://localhost:4031";
 // const url= "http://hybrid.srishticampus.in:4031/"
@@ -82,6 +83,8 @@ function App() {
     <BrowserRouter
        basename='/vehicle_parking_locator'
      >
+          <ScrollToTop/>
+
     <Routes>
 
       <Route path='/' element={[<Navbar/>,<MainAdmin/>,<Footer/>]}/>

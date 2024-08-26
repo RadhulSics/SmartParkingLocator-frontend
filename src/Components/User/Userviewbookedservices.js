@@ -56,20 +56,29 @@ function Userviewbookedservices() {
                       <strong>Service Center Contact:</strong>{" "}
                       {a.shopid?.contact}
                     </p>
-                    <p>
+                    {
+                      a.completedStatus?<p>
+                      <strong>Service Status:</strong>Completed
+                      
+                    </p>  : <p>
                       <strong>Booking Status:</strong>{" "}
                       {a.approvalstatus ? "Approved" : "Pending"}
-                    </p>  
+                    </p> 
+                    }
+                    
                     <p></p>
                   </div>
                   <div className="d-flex" >
-                  <button
+                    {
+                      a.completedStatus?'':<button
                     type="submit"
                     className="btn btn-danger view-bookedservice-btn"
                     onClick={()=>{deletefn(a._id)}}
                   >
                     Cancel Service
                   </button>
+                    }
+                  
                   <Link to={`/viewserviceupdations/${a._id}`}>
                     <button
                       type="submit"
