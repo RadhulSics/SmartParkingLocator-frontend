@@ -15,8 +15,8 @@ import ViewMechaniclist from '../Mechanic/ViewMechaniclist'
 
 
 
-const url = "http://localhost:4031";
-// const url= "http://hybrid.srishticampus.in:4031/"
+// const url = "http://localhost:4031";
+const url= "http://hybrid.srishticampus.in:4031/"
 
 
 

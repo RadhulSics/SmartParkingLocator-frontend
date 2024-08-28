@@ -11,8 +11,8 @@ import Viewmysparepartbookig from './Viewmysparepartbookig';
 // import Addservice from './Addservice'
 // import Viewmyservices from './Viewmyservices'
 
-const url = "http://localhost:4031";
-// const url= "http://hybrid.srishticampus.in:4031/"
+// const url = "http://localhost:4031";
+const url= "http://hybrid.srishticampus.in:4031/"
 
 
 function UserProfileMain({data}) {
