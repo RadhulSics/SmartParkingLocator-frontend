@@ -20,7 +20,7 @@ function ParkingAgentViewRequests() {
           .then((res) => {
             console.log(res);
             if (res.data.status === 200) {
-              setData(res.data.data);
+              setData(res.data.data.reverse());
             }
           })
           .catch((err) => {
@@ -37,6 +37,7 @@ function ParkingAgentViewRequests() {
               <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Contact</th>
+                <th scope="col">Vehicle Number</th>
                 <th scope="col">Date</th>
                 {/* <th scope="col">Time</th> */}
                 <th scope="col">Price</th>
@@ -48,7 +49,8 @@ function ParkingAgentViewRequests() {
                 return (
                   <tr>
                     <th >{e.custId.firstname} {e.custId.lastname}</th>
-                    <td>{e.custId.firstname}</td>
+                    <td>{e.custId.contact}</td>
+                    <td >{e.vehicleNumber?e.vehicleNumber:''}</td>
                     <td>{e.date.slice(0,10)}</td>
                     <td>{e.paId.price}</td>
                     <td><Link to={`/parking_agent_check_slots/${e.paId._id}/${e._id}`}><button className='btn btn-success'>Check Slots</button></Link></td>

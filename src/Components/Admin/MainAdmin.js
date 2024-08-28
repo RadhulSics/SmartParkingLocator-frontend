@@ -57,7 +57,7 @@ function MainAdmin() {
   return ( 
     <div>
       {userid && (
-        <div className="Main-box">
+        <div className="Main-box scrollable-container">
           <div className=" user_prescription_link">
             <Link to="/emergency">
               <button type="submit" className="btn btn-danger">

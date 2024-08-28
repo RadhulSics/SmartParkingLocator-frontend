@@ -34,6 +34,7 @@ function UserViewParkingAreaBookings() {
             <thead>
               <tr>
                 <th scope="col">Location</th>
+                <th scope="col">Vehicle Number</th>
                 <th scope="col">Date</th>
                 <th scope="col">Price</th>
                 <th scope="col">Status</th>
@@ -44,6 +45,7 @@ function UserViewParkingAreaBookings() {
                 return (
                   <tr>
                     <td >{e.paId.location}</td>
+                    <td >{e.vehicleNumber?e.vehicleNumber:''}</td>
                     <td>{e.date.slice(0,10)}</td>
                     <td>{e.paId.price}</td>
                     <td>{e.status}</td>

@@ -31,6 +31,7 @@ function ParkingAgentViewApprovedBookings() {
               <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Contact</th>
+                <th scope="col">Vehicle Number</th>
                 <th scope="col">Date</th>
                 {/* <th scope="col">Time</th> */}
                 <th scope="col">Price</th>
@@ -42,7 +43,8 @@ function ParkingAgentViewApprovedBookings() {
                 return (
                   <tr>
                     <th >{e.custId.firstname} {e.custId.lastname}</th>
-                    <td>{e.custId.firstname}</td>
+                    <td>{e.custId.contact}</td>
+                    <td >{e.vehicleNumber?e.vehicleNumber:''}</td>
                     <td>{e.date.slice(0,10)}</td>
                     <td>{e.paId.price}</td>
                     <td>{e.status}</td>

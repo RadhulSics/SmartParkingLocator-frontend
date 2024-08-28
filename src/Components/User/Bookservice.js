@@ -77,41 +77,7 @@ function Bookservice({url}) {
                 value={data.shopid?.name} />
               </div>
 
-              {/* <div className="row">
-                <div className="col-6 ">
-                  <div className=" " style={{ paddingTop: "10px" }}>
-                    <h4>City</h4>
-                  </div>
-
-                  <input
-                    type="text"
-                    name="location"
-                    className="contributer_inputsec"
-                    value={data.shopid?.city} />
-
-                </div>
-
-                <div className="col-6 ">
-                  <div className=" " style={{ paddingTop: "10px" }}>
-                    <h4>District</h4>
-                  </div>
-
-                  <input
-                    type="text"
-                    name="location"
-                    className="contributer_inputsec"
-                    value={data.shopid?.district} 
-
-                  />
-                </div>
-              </div> */}
-
-              {/* <div
-                className="row contributer_addnewsone"
-                style={{ paddingTop: "10px" }}
-              >
-                <h4>Location</h4>
-              </div> */}
+             
               <div className="row">
                 <div className="col-6 ">
                   <div className=" " style={{ paddingTop: "10px" }}>
@@ -125,19 +91,8 @@ function Bookservice({url}) {
                     value={data.shopid?.contact} />
 
                 </div>
+                
 
-                {/* <div className="col-6 ">
-                  <div className=" " style={{ paddingTop: "10px" }}>
-                    <h4>Email</h4>
-                  </div>
-
-                  <input
-                    type="text"
-                    name="location"
-                    className="contributer_inputsec"
-                    value={data.shopid?.email} />
-
-                </div> */}
               </div>
 
               <div className="row">
@@ -153,20 +108,21 @@ function Bookservice({url}) {
                     value={data.price}
                   />
                 </div>
-
                 {/* <div className="col-6 ">
                   <div className=" " style={{ paddingTop: "10px" }}>
-                    <h4>Reg No</h4>
+                    <h4>Vehicle Number</h4>
                   </div>
 
                   <input
                     type="text"
-                    name="location"
+                    name="vehicleNumber"
                     className="contributer_inputsec"
-                    value={data.shopid?.regno} />
-
-                  
+                    value={data.vehicleNumber}
+                    required
+                  />
                 </div> */}
+
+                {/*  */}
               </div>
             </div>
           </div>

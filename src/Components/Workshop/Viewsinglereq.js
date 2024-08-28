@@ -82,6 +82,10 @@ const assignmech=((e)=>{
 <div className="container viewsinglereq">
             <h2  >Service Details</h2>
             <div className="details" style={{marginTop:"20px"}}>
+                <span className="label">Vehicle Number:</span>
+                <span className="value">{data.vehicleNumber?data.vehicleNumber:''}</span>
+            </div>
+            <div className="details">
                 <span className="label">Service Name:</span>
                 <span className="value">{data.serviceid?.serviceName}</span>
             </div>

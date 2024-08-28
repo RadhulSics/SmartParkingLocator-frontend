@@ -47,6 +47,9 @@ function Userviewbookedservices() {
                     <p>{/* <strong>Booking Date:</strong> {dateOnly} */}</p>
                     <p>{/* <strong>Service Date:</strong> {sdate} */}</p>
                     <p>
+                      <strong>Vehicle Number:</strong> {a.vehicleNumber?a.vehicleNumber:''}
+                    </p>
+                    <p>
                       <strong>Service Name:</strong> {a.serviceid?.serviceName}
                     </p>
                     <p>

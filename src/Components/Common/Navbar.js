@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div>
-      <nav className="nav-main">
+      <nav className="nav-main scrollable-container">
         <div className="nav_logo_new d-flex align-items-center">
           <img
             className=""

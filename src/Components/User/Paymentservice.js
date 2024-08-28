@@ -6,22 +6,23 @@ import axiosInstance from "../../Baseurl";
 function Paymentservice() {
   const { id } = useParams();
   const [data, setdata] = useState({});
-  const userid=localStorage.getItem("userid")
-console.log(userid+"userid");
+  const userid = localStorage.getItem("userid");
+  console.log(userid + "userid");
 
-  const[form,setform]=useState({
-    custid:localStorage.getItem("userid"),
-    servicedate:"",
-    name:"",
-    number:"",
-    cdnumber:"",
-    month:"",
-    year:""
-
-  })
+  const [form, setform] = useState({
+    custid: localStorage.getItem("userid"),
+    servicedate: "",
+    name: "",
+    number: "",
+    cdnumber: "",
+    month: "",
+    year: "",
+    vehicleNumber: ""
+  });
   const [formData, setFormData] = useState({
-    number: '',
-    cdnumber: '',
+    number: "",
+    cdnumber: "",
+    vehicleNumberError: ""
   });
 
   const handleInputChange = (e) => {
@@ -29,11 +30,11 @@ console.log(userid+"userid");
     setFormData({
       ...formData,
       [name]: value,
-      numberError: '',
-      cdnumberError: ''
+      numberError: "",
+      cdnumberError: "",
+      vehicleNumberError: ""
     });
   };
-
 
   useEffect(() => {
     axiosInstance
@@ -45,47 +46,63 @@ console.log(userid+"userid");
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [id]);
 
-  const changefn=((e)=>{
+  const changefn = (e) => {
     setform({
-    ...form,[e.target.name]:e.target.value
-})
-  })
-  console.log(form);
-const navigate=useNavigate()
-  const submitfn=((a)=>{
-    a.preventDefault()
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const validateVehicleNumber = (vehicleNumber) => {
+    const vehicleNumberRegex = /^[A-Z]{2}[0-9]{2}[A-Z]{1,2}[0-9]{1,4}$/;
+    return vehicleNumberRegex.test(vehicleNumber);
+  };
+
+  const navigate = useNavigate();
+  const submitfn = (a) => {
+    a.preventDefault();
     if (formData.number.length !== 16) {
-      setFormData({ ...formData, numberError: 'Card number must be 16 digits.' });
+      setFormData({
+        ...formData,
+        numberError: "Card number must be 16 digits.",
+      });
       return;
     }
-    // Validation for CVV
     if (formData.cdnumber.length < 3) {
-      setFormData({ ...formData, cdnumberError: 'CVV must be at least 3 digits.' });
+      setFormData({
+        ...formData,
+        cdnumberError: "CVV must be at least 3 digits.",
+      });
+      return;
+    }
+    if (!validateVehicleNumber(form.vehicleNumber)) {
+      setFormData({
+        ...formData,
+        vehicleNumberError: "Invalid vehicle number format. Eg : KL01AB1234",
+      });
       return;
     }
 
-    axiosInstance.post(`bookaService/${id}`,form)
-    .then((res) => {
+    console.log(form);
+    
+
+    axiosInstance
+      .post(`bookaService/${id}`, form)
+      .then((res) => {
         console.log(res);
-        if(res.data.status==200){
-            alert("Service booked succesfully")
-            navigate("/user-viewbookedservices")
-        }
-        else{
-            alert("error in booking")
+        if (res.data.status === 200) {
+          alert("Service booked successfully");
+          navigate("/user-viewbookedservices");
+        } else {
+          alert("Error in booking");
         }
       })
       .catch((err) => {
         console.log(err);
       });
-
-
-
-  })
-
-
+  };
 
   return (
     <div>
@@ -98,10 +115,7 @@ const navigate=useNavigate()
                 data-wow-delay="0.5s"
                 style={{ marginTop: "7rem" }}
               >
-                <form
-                  className="mt-4"
-                  onSubmit={submitfn}
-                >
+                <form className="mt-4" onSubmit={submitfn}>
                   <div className="row">
                     <div class="col-md-4">Choose a Date</div>
                     <div class="col-md-8">
@@ -149,12 +163,11 @@ const navigate=useNavigate()
                           value={form.number}
                           onChange={(e) => {
                             handleInputChange(e);
-                            changefn(e)
+                            changefn(e);
                           }}
-        
                           required
                         />
-                       <p style={{color: 'red'}}>{formData.numberError}</p>
+                        <p style={{ color: "red" }}>{formData.numberError}</p>
                         <label for="cardNo">Card Number</label>
                       </div>
                     </div>
@@ -170,11 +183,10 @@ const navigate=useNavigate()
                           value={form.cdnumber}
                           onChange={(e) => {
                             handleInputChange(e);
-                            changefn(e)
+                            changefn(e);
                           }}
-
                         />
-                       <p style={{color: 'red'}}>{formData.cdnumberError}</p>
+                        <p style={{ color: "red" }}>{formData.cdnumberError}</p>
                         <label for="email">CVV</label>
                       </div>
                     </div>
@@ -192,7 +204,6 @@ const navigate=useNavigate()
                                 class="form-control"
                                 name="month"
                                 id="month"
-
                                 required
                               >
                                 <option>Month</option>
@@ -247,6 +258,26 @@ const navigate=useNavigate()
                         </div>
                       </div>
                     </div>
+
+                    <div className="col-md-12">
+                  <div className="form-floating">
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="vehicleNumber"
+                      placeholder="Vehicle Number"
+                      required
+                      name="vehicleNumber"
+                      value={form.vehicleNumber}
+                      onChange={(e) => {
+                        handleInputChange(e);
+                        changefn(e);
+                      }}
+                    />
+                    <p style={{ color: "red" }}>{formData.vehicleNumberError}</p>
+                    <label htmlFor="vehicleNumber">Vehicle Number</label>
+                  </div>
+                </div>
 
                     <div class="col-12">
                       <button class="btn btn-success" type="submit">
