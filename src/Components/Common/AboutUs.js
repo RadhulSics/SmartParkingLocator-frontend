@@ -15,7 +15,7 @@ function AboutUs() {
     </div>
     <div>
         <p className='aboutus-para'>
-        At Automodo, we're passionate about revolutionizing the way people interact with their vehicles. Our mission is to integrate cutting-edge technology seamlessly into everyday driving experiences, making transportation safer, more efficient, and enjoyable for everyone. With a dedicated team of experts in automotive engineering, software development, and user experience design, we strive to push the boundaries of innovation in the automotive industry. Whether it's enhancing vehicle performance, implementing smart navigation solutions, or developing advanced driver-assistance systems, Automodo is committed to delivering excellence in every aspect of automotive technology. Join us on our journey as we pave the way towards a smarter, more connected future on the road.
+        At Smart Parking Locator, we're passionate about revolutionizing the way people interact with their vehicles. Our mission is to integrate cutting-edge technology seamlessly into everyday driving experiences, making transportation safer, more efficient, and enjoyable for everyone. With a dedicated team of experts in automotive engineering, software development, and user experience design, we strive to push the boundaries of innovation in the automotive industry. Whether it's enhancing vehicle performance, implementing smart navigation solutions, or developing advanced driver-assistance systems, It is committed to delivering excellence in every aspect of automotive technology. Join us on our journey as we pave the way towards a smarter, more connected future on the road.
         </p>
     </div>
     <div className='row abt-image-div'>
