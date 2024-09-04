@@ -72,7 +72,7 @@ function Emergency() {
                 <div className="col-12">
                   <p className="emergency-para">UserName: {name.firstname} {name.lastname}</p>
                 </div>
-                <div className="District-emergecy w-50 m-auto">
+                <div className="District-emergecy w-75 m-auto">
                   <select name="district" value={data.district} onChange={changefn} required className="form-control">
                     <option value="">Select Your District</option>
                     {districtsInKerala.map((district) => (
@@ -81,7 +81,7 @@ function Emergency() {
                   </select>
                 </div>
                 <div className="District-emergecy">
-                  <textarea placeholder="Enter Your Issue" name="issues" value={data.issues} onChange={changefn} required />
+                  <textarea className="w-75" placeholder="Enter Your Issue" name="issues" value={data.issues} onChange={changefn} required />
                 </div>
                 <div className="emergencybtn">
                   <button type="submit" className="btn btn-primary">Submit Emergency Service</button>

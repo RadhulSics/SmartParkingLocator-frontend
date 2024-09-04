@@ -91,6 +91,18 @@ function Bookservice({url}) {
                     value={data.shopid?.contact} />
 
                 </div>
+                <div className="col-6 ">
+                  <div className=" " style={{ paddingTop: "10px" }}>
+                    <h4>City</h4>
+                  </div>
+
+                  <input
+                    type="text"
+                    name="location"
+                    className="contributer_inputsec"
+                    value={data.shopid?.city} />
+
+                </div>
                 
 
               </div>
@@ -108,19 +120,19 @@ function Bookservice({url}) {
                     value={data.price}
                   />
                 </div>
-                {/* <div className="col-6 ">
+                <div className="col-6 ">
                   <div className=" " style={{ paddingTop: "10px" }}>
-                    <h4>Vehicle Number</h4>
+                    <h4>District</h4>
                   </div>
 
                   <input
                     type="text"
                     name="vehicleNumber"
                     className="contributer_inputsec"
-                    value={data.vehicleNumber}
+                    value={data.shopid?.district}
                     required
                   />
-                </div> */}
+                </div>
 
                 {/*  */}
               </div>

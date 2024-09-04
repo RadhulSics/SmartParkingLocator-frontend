@@ -71,6 +71,8 @@ function Viewservices() {
                       <div className="card-content ">
                         <div className="service-name "> {a.serviceName}</div>
                         <div className="price">{a.description}</div>
+                        <div className="price">City : {a.shopid?.city}</div>
+                        <div className="price">District : {a.shopid?.district}</div>
                         <div className="description">Cost : {a.price}</div>
                         <div className="shop-name" style={{color:"black"}}>ShopName: {a.shopid?.name}</div>
                       </div>
