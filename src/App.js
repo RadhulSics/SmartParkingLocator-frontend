@@ -75,8 +75,8 @@ import ParkingAgentViewApprovedBookings from "./Components/ParkingAgent/ParkingA
 import ParkingAgentForgotPass from "./Components/ParkingAgent/ParkingAgentForgotPass";
 import ScrollToTop from "./Components/Common/ScrollToTop";
 
-// const url = "http://localhost:4031";
-const url= "http://hybrid.srishticampus.in:4031/"
+const url = "http://localhost:4031";
+// const url= "http://hybrid.srishticampus.in:4031/"
 
 function App() {
   return (
